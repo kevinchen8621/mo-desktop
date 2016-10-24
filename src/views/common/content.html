@@ -1,0 +1,27 @@
+<!-- Wrapper-->
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <div ng-include="&#39;views/common/navigation.html&#39;"></div>
+
+    <!-- Page wraper -->
+    <!-- ng-class with current state name give you the ability to extended customization your view -->
+    <div id="page-wrapper" class="gray-bg {{$state.current.name}}">
+
+        <!-- Page wrapper -->
+        <div ng-include="&#39;views/common/topnavbar.html&#39;"></div>
+
+        <!-- Main view  -->
+        <div ui-view=""></div>
+
+        <!-- Footer -->
+        <div ng-include="&#39;views/common/footer.html&#39;"></div>
+
+    </div>
+    <!-- End page wrapper-->
+
+    <!-- Right Sidebar -->
+    <div ng-include="&#39;views/common/right_sidebar.html&#39;"></div>
+
+</div>
+<!-- End wrapper-->
